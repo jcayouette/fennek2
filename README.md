@@ -32,7 +32,9 @@ const puppeteer = require('puppeteer');
 
 
 For more informatin on working with the Google puppeteer API see:
+
 https://github.com/GoogleChrome/puppeteer
 
-You can also view the official API: 
+You can also view the official API:
+ 
 https://pptr.dev/

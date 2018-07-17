@@ -3,7 +3,7 @@
 
 Note: Puppeteer requires at least Node v6.4.0, but the examples below use async/await which is only supported in Node v7.6.0 or greater.
 
-Install npm10 on tumbleweed:
+Install **npm10** on tumbleweed:
 `sudo zypper in npm10`
 
 Install Puppeteer:

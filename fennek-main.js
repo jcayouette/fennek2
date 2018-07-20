@@ -11,6 +11,7 @@
  *
  * Joseph Cayouette, SUSE Linux
  * July 2018
+ *
  * This app represents a much needed migration and update from phantomjs/casperjs to chrome headless
  * with the puppeteer API. This application runs using nodejs 6+, Puppeteer API and Chrome headless.
  * Fennek automatically logs into SUSE Manager/Uyuni, navigates and generates images of all important
@@ -30,7 +31,6 @@ const URL = 'https://headless-testingserver.tf.local/';
 const loginPath = './images/loginPath/';
 
 const systemsAutoinstallation = './images/systemsPath/autoinstallation';
-
 
 /**
  * Global configuration options.
@@ -68,6 +68,7 @@ const colors = require('colors');
     await page.type('#password-field', pass);
     await page.click('#login');
 
+    // Call WebUI Modules with required parameters
     await home(browser, URL, page);
     await systems(browser, URL, page);
     await ssm(browser, URL, page);

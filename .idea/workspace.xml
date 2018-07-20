@@ -2,8 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61c4710b-a5dd-47cb-9159-cb8e68020a6e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/clean.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/modules/ssm.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/coyote.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/coyote.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/ExtraPackagesSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/SystemsOverview.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/accountDeactivation.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/addresses.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/bootstrapList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/changeEmail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/editAddress.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/homePage.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/inactiveSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/loginPage.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/notification-messages.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/orgConfigChannels.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/orgConfigDetails.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/organizations.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/outOfDateList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/partitionFiltering.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/physicalList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/proxyHierarchy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/proxySystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/registeredSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/requiringRebootList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/systemList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/systems-with-managed-groups.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/unentitledSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/ungroupedSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/userDetails.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/userPreferences.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/virtFiltering.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/virtualList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/images/png/visualizationHierarchy.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/fennek-main.js" afterPath="$PROJECT_DIR$/fennek-main.js" />
+      <change beforePath="$PROJECT_DIR$/github.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/images/homePath/accountDeactivation.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/images/homePath/addresses.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/images/homePath/changeEmail.png" afterPath="" />
@@ -16,17 +51,33 @@
       <change beforePath="$PROJECT_DIR$/images/homePath/userPreferences.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/images/loginPath/homePage.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/images/loginPath/loginPage.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/SystemsOverview.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/bootstrapList.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/outOfDateList.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/partitionFiltering.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/physicalList.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/proxyHierarchy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/systemList.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems-with-managed-groups.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/virtFiltering.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/virtualList.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/systemsPath/visualizationHierarchy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/editGroup.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/groupsSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/ssm/ssmErrata.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/ssm/ssmOverview.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/ssm/ssmPackages.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/ssm/ssmSystems.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/ExtraPackagesSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/SystemsOverview.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/bootstrapList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/currencySystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/duplicateSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/entitlementsSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/inactiveSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/outOfDateList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/physicalList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/proxySystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/registeredSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/requiringRebootList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/systemList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/unentitledSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/ungroupedSystemsList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/systems/virtualList.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/visualization/partitionFiltering.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/visualization/proxyHierarchy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/visualization/systems-with-managed-groups.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/visualization/virtFiltering.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/systemsPath/visualization/visualizationHierarchy.png" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +94,8 @@
       <file leaf-file-name="fennek-main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fennek-main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="72" column="11" lean-forward="false" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+            <state relative-caret-position="180">
+              <caret line="433" column="0" lean-forward="true" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,6 +127,8 @@
         <option value="$PROJECT_DIR$/example.js" />
         <option value="$PROJECT_DIR$/page_modules/login.js" />
         <option value="$PROJECT_DIR$/UIModules/loginPath.js" />
+        <option value="$PROJECT_DIR$/modules/ssm.js" />
+        <option value="$PROJECT_DIR$/clean.sh" />
         <option value="$PROJECT_DIR$/fennek-main.js" />
       </list>
     </option>
@@ -97,7 +150,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="27" />
-    <option name="width" value="1004" />
+    <option name="width" value="1024" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -116,6 +169,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,26 +178,20 @@
               <item name="fennek2" type="b2602c69:ProjectViewProjectNode" />
               <item name="fennek2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="fennek2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fennek2" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.6.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,18 +230,19 @@
       <workItem from="1531734318515" duration="599000" />
       <workItem from="1531740185508" duration="33421000" />
       <workItem from="1531839038998" duration="532000" />
-      <workItem from="1531983044692" duration="4607000" />
+      <workItem from="1531983044692" duration="16339000" />
+      <workItem from="1532074264060" duration="1102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41315000" />
+    <option name="totallyTimeSpent" value="54149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1004" height="1053" extended-state="4" />
+    <frame x="0" y="27" width="1024" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33027524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21044886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -222,6 +272,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/fennek-main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fennek-main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5508">
@@ -263,11 +321,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example.png" />
     <entry file="file://$PROJECT_DIR$/images/example.png" />
-    <entry file="file://$PROJECT_DIR$/github.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/github.png" />
     <entry file="file://$PROJECT_DIR$/images/loginPage.png" />
     <entry file="file://$PROJECT_DIR$/images/homePage.png" />
     <entry file="file://$PROJECT_DIR$/page_modules/login.js">
@@ -305,11 +359,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/loginPath/loginPage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/loginPath/homePage.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -330,51 +379,43 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/systemsPath/systems-with-managed-groups.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/systemsPath/proxyHierarchy.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/systemsPath/visualizationHierarchy.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/systemsPath/systems-with-managed-groups.png" />
+    <entry file="file://$PROJECT_DIR$/images/systemsPath/proxyHierarchy.png" />
+    <entry file="file://$PROJECT_DIR$/images/systemsPath/visualizationHierarchy.png" />
     <entry file="file://$PROJECT_DIR$/UIModules/loginPath.js" />
-    <entry file="file://$PROJECT_DIR$/images/systemsPath/inactiveSystemsList.png">
+    <entry file="file://$PROJECT_DIR$/images/systemsPath/inactiveSystemsList.png" />
+    <entry file="file://$PROJECT_DIR$/images/systemsPath/virtFiltering.png" />
+    <entry file="file://$PROJECT_DIR$/images/systemsPath/partitionFiltering.png" />
+    <entry file="file://$PROJECT_DIR$/build/images/png/partitionFiltering.png" />
+    <entry file="file://$PROJECT_DIR$/build/images/png/virtFiltering.png" />
+    <entry file="file://$PROJECT_DIR$/images/systemsPath/ssm/ssmErrata.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/systemsPath/virtFiltering.png">
+    <entry file="file://$PROJECT_DIR$/images/loginPath/loginPage.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/systemsPath/partitionFiltering.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/modules/ssm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/images/png/partitionFiltering.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/images/png/virtFiltering.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/clean.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fennek-main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="72" column="11" lean-forward="false" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+        <state relative-caret-position="180">
+          <caret line="433" column="0" lean-forward="true" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
           <folding />
         </state>
       </provider>

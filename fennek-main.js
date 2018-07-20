@@ -21,6 +21,7 @@
  *
  */
 
+
 const puppeteer = require('puppeteer');
 
 // SUSE Manager Server URL
@@ -35,11 +36,8 @@ const systemsSSM = './images/systemsPath/ssm/';
 const systemsVisualization = './images/systemsPath/visualization/';
 const systemsAutoinstallation = './images/systemsPath/autoinstallation';
 
-/**
- * =============================================
- * GLOBAL CONFIGURATION
- * =============================================
-  */
+
+// GLOBAL CONFIGURATION
 
 // User info for SUSE Manager/Uyuni
 global.user = 'admin';
@@ -56,7 +54,7 @@ global.big_timeout = 100000;
 (async () => {
     const browser = await puppeteer.launch({headless: false, ignoreHTTPSErrors: true});
     const page = await browser.newPage();
-    await page.setViewport({ width: 1920, height: 1080 });
+    await page.setViewport({ width: 1920, height: 1200 });
 
     // Capture login Page
     await page.goto(URL);
@@ -69,9 +67,7 @@ global.big_timeout = 100000;
     await page.click('#login');
 
 
-    /**
-     * HOME
-     */
+    // HOME
     // Wait for page to load then capture home overview page
     await page.waitFor(timeout);
     await page.screenshot({ path: loginPath + 'homePage.png' });
@@ -149,9 +145,9 @@ global.big_timeout = 100000;
 
 
 
-    /**
-     * SYSTEMS
-     */
+
+     // SYSTEMS
+
     // Systems : Overview
     await page.waitFor(timeout);
     await page.goto(URL + 'rhn/systems/Overview.do');
@@ -283,33 +279,159 @@ global.big_timeout = 100000;
     /**
      * SYSTEMS SSM
      */
-    // Systems : Systems List : SSM Overview
+
+
+    // Systems : SSM Overview
     await page.waitFor(timeout);
     await page.goto(URL + 'rhn/ssm/index.do');
     const ssmOverview = await page.$('#spacewalk-content');
     await ssmOverview.screenshot({path: systemsSSM + 'ssmOverview.png'});
     console.log('New screenshot generated in: ' + '/systemsPath/ssmOverview.png');
 
-    // Systems : Systems List : SSM Systems
+    // Systems : SSM Systems
     await page.waitFor(timeout);
     await page.goto(URL + 'rhn/systems/ssm/ListSystems.do');
     const ssmSystems = await page.$('#spacewalk-content');
     await ssmSystems.screenshot({path: systemsSSM + 'ssmSystems.png'});
     console.log('New screenshot generated in: ' + '/systemsPath/ssmSystems.png');
 
-    // Systems : Systems List : SSM Patches/Errata
+
+    // Systems : SSM Patches/Errata
     await page.waitFor(timeout);
     await page.goto(URL + 'rhn/systems/ssm/ListErrata.do');
     const ssmErrata = await page.$('#spacewalk-content');
     await ssmErrata.screenshot({path: systemsSSM + 'ssmErrata.png'});
     console.log('New screenshot generated in: ' + '/systemsPath/ssmErrata.png');
 
-    // Systems : Systems List : SSM Packages
+    // Systems : SSM Packages
     await page.waitFor(timeout);
     await page.goto(URL + 'rhn/ssm/Packages.do');
     const ssmPackages = await page.$('#spacewalk-content');
     await ssmPackages.screenshot({path: systemsSSM + 'ssmPackages.png'});
     console.log('New screenshot generated in: ' + '/systemsPath/ssmPackages.png');
+
+
+    // Systems : SSM Packages Upgrade
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/ssm/PackageUpgrade.do');
+    const ssmPackageUpgrade = await page.$('#spacewalk-content');
+    await ssmPackageUpgrade.screenshot({path: systemsSSM + 'ssmPackageUpgrade.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmPackageUpgrade.png');
+
+    // Systems : SSM Packages Install
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/ssm/PackageInstall.do');
+    const ssmPackageInstall = await page.$('#spacewalk-content');
+    await ssmPackageInstall.screenshot({path: systemsSSM + 'ssmPackageInstall.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmPackageInstall.png');
+
+    // Systems : SSM Packages Remove
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/ssm/PackageRemove.do');
+    const ssmPackageRemove = await page.$('#spacewalk-content');
+    await page.waitFor(timeout);
+    await ssmPackageRemove.screenshot({path: systemsSSM + 'ssmPackageRemove.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmPackageRemove.png');
+
+    // Systems : SSM Groups
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/groups/Manage.do');
+    const ssmGroups = await page.$('#spacewalk-content');
+    await ssmGroups.screenshot({path: systemsSSM + 'ssmGroups.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmGroups.png');
+
+    // Systems : SSM Channels
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/channel/ssm/ChannelSubscriptions.do');
+    const ssmChannels = await page.$('#spacewalk-content');
+    await ssmChannels.screenshot({path: systemsSSM + 'ssmChannels.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmChannels.png');
+
+    // Systems : SSM Configuration
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/config/Deploy.do');
+    const ssmConfiguration = await page.$('#spacewalk-content');
+    await ssmConfiguration.screenshot({path: systemsSSM + 'ssmConfiguration.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmConfiguration.png');
+
+    // Systems : SSM Configuration - Compare Files
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/config/Diff.do');
+    const ssmConfigurationCompare = await page.$('#spacewalk-content');
+    await ssmConfigurationCompare.screenshot({path: systemsSSM + 'ssmConfigurationCompare.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmConfigurationCompare.png');
+
+    // Systems : SSM Configuration - Subscribe
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/config/Subscribe.do');
+    const ssmConfigurationSubscribe = await page.$('#spacewalk-content');
+    await ssmConfigurationSubscribe.screenshot({path: systemsSSM + 'ssmConfigurationSubscribe.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmConfigurationSubscribe.png');
+
+    // Systems : SSM Configuration - Unsubscribe
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/config/Unsubscribe.do');
+    const ssmConfigurationUnsubscribe = await page.$('#spacewalk-content');
+    await ssmConfigurationUnsubscribe.screenshot({path: systemsSSM + 'ssmConfigurationUnsubscribe.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmConfigurationUnsubscribe.png');
+
+    // Systems : SSM Configuration - Enable Config
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/config/Enable.do');
+    const ssmConfigurationEnableConfig = await page.$('#spacewalk-content');
+    await ssmConfigurationEnableConfig.screenshot({path: systemsSSM + 'ssmConfigurationEnableConfig.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmConfigurationEnableConfig.png');
+
+    // Systems : SSM Configuration - Provisioning - Power management
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/provisioning/PowerManagementConfiguration.do');
+    const ssmProvisioningPowerManagementConf = await page.$('#spacewalk-content');
+    await ssmProvisioningPowerManagementConf.screenshot({path: systemsSSM + 'ssmProvisioningPowerManagementConf.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmProvisioningPowerManagementConf.png');
+
+    // Systems : SSM Configuration - Provisioning - Power management
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/provisioning/PowerManagementOperations.do');
+    const ssmProvisioningPowerManagementOpts = await page.$('#spacewalk-content');
+    await ssmProvisioningPowerManagementOpts.screenshot({path: systemsSSM + 'ssmProvisioningPowerManagementOps.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmProvisioningPowerManagementOps.png');
+
+    // Systems : SSM Configuration - States - Highstate
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/manager/systems/ssm/highstate');
+    const ssmStatesHighstate = await page.$('#spacewalk-content');
+    await ssmStatesHighstate.screenshot({path: systemsSSM + 'ssmStatesHighstate.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmStatesHighstate.png');
+
+    // Systems : SSM Configuration - Misc -Preferences
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/misc/Index.do');
+    const ssmMiscPreferences = await page.$('#spacewalk-content');
+    await ssmMiscPreferences.screenshot({path: systemsSSM + 'ssmMiscPreferences.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmMiscPreferences.png');
+
+    // Systems : SSM Configuration - Misc - Hardware
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/misc/HardwareRefresh.do');
+    const ssmMiscHardware = await page.$('#spacewalk-content');
+    await ssmMiscHardware.screenshot({path: systemsSSM + 'ssmMiscHardware.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmMiscHardware.png');
+
+    // Systems : SSM Configuration - Misc - Software
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/misc/SoftwareRefresh.do');
+    const ssmMiscSoftware = await page.$('#spacewalk-content');
+    await ssmMiscSoftware.screenshot({path: systemsSSM + 'ssmMiscSoftware.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmMiscSoftware.png');
+
+    // Systems : SSM Configuration - Misc - Remote Command
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/provisioning/RemoteCommand.do');
+    const ssmMiscRemoteCommand = await page.$('#spacewalk-content');
+    await ssmMiscRemoteCommand.screenshot({path: systemsSSM + 'ssmMiscRemoteCommand.png'});
+    console.log('New screenshot generated in: ' + '/systemsPath/ssmMiscRemoteCommand.png');
+
+
 
 
     /**

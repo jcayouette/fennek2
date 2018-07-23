@@ -50,7 +50,7 @@ const colors = require('colors');
 // Start Headless using Puppeteer API
 (async () => {
 
-    const browser = await puppeteer.launch({headless: true, ignoreHTTPSErrors: true});
+    const browser = await puppeteer.launch({headless: false, ignoreHTTPSErrors: true});
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 1200 });
     console.log('Starting Capture...'.inverse.blue.bold);

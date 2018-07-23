@@ -15,7 +15,7 @@
  * This app represents a much needed migration and update from phantomjs/casperjs to chrome headless
  * with the puppeteer API. This application runs using nodejs 6+, Puppeteer API and Chrome headless.
  * Fennek automatically logs into SUSE Manager/Uyuni, navigates and generates images of all important
- * page elements for our enterprise user manuals.
+ * page elements for our enterprise/Open source user manuals.
  */
 
 const puppeteer = require('puppeteer');

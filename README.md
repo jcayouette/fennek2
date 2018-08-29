@@ -25,6 +25,10 @@ const puppeteer = require('puppeteer');
   await browser.close();
 })();
 ```
+3. Save the file as example.js and execute the following on the command line:
+
+`node example.js`
+
 
 ### Capturing specific WebUI Elements:
 
@@ -37,9 +41,7 @@ const puppeteer = require('puppeteer');
     console.log('New screenshot generated in: '.bold + '/systemsPath/ssmSystems.png'.bgMagenta.bold);
 ```
 
-3. Save the file as example.js and execute the following on the command line:
 
-`node example.js`
 
 
 For more informatin on working with the Google puppeteer API see:

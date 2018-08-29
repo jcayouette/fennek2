@@ -26,6 +26,17 @@ const puppeteer = require('puppeteer');
 })();
 ```
 
+### Capturing specific WebUI Elements:
+
+```
+// Systems : SSM Systems
+    await page.waitFor(timeout);
+    await page.goto(URL + 'rhn/systems/ssm/ListSystems.do');
+    const ssmSystems = await page.$('#spacewalk-content');
+    await ssmSystems.screenshot({path: systemsSSM + 'ssmSystems.png'});
+    console.log('New screenshot generated in: '.bold + '/systemsPath/ssmSystems.png'.bgMagenta.bold);
+```
+
 3. Save the file as example.js and execute the following on the command line:
 
 `node example.js`

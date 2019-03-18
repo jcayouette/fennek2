@@ -11,6 +11,8 @@ Note: Puppeteer requires at least Node v6.4.0, but the examples below use async/
 
 `npm i puppeteer`
 
+3. Install colors.js from npm https://www.npmjs.com/package/colors. This package is used to provide easy shortcuts to colored terminal output.
+
 ## Example - Navigates to https://example.com and saves a screenshot as example.png.
 
 ```
